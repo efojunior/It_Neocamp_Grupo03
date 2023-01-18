@@ -1,22 +1,25 @@
-public class OperacaoBasica {
+public class OperacaoBasica implements IoperacaoBasica{
 
     private float num1, num2, resultado;
-
+    @Override
     public float Soma(){
        this.resultado=this.num1 + this.num2;
-       return resultado
+       return resultado;
     }
+    @Override
     public float Diminuir(){
         this.resultado=this.num1 - this.num2;
-        return resultado
+        return resultado;
     }
+    @Override
     public float Multiplicar(){
         this.resultado=this.num1 * this.num2;
-        return resultado
+        return resultado;
     }
+    @Override
     public float Dividir(){
         this.resultado=this.num1 / this.num2;
-        return resultado
+        return resultado;
     }
 
     public OperacaoBasica(float num1, float num2) {

@@ -1,5 +1,3 @@
-package Calculadora;
-
 import java.util.Scanner;
 
 public class TesteCalculadora {
@@ -21,10 +19,10 @@ public class TesteCalculadora {
                 switch (opcao2){
                     case 1:
                         System.out.println("Digite um 1o numero:");
-                         num1 = ler.nextFloat();
+                        num1 = ler.nextFloat();
                         System.out.println("Digite um 2o numero:");
                         num2 = ler.nextFloat();
-//                        operacaoBasica opBas = new opercaoBasica(num1, num2);
+//                        OperacaoBasica opBas = new OpercaoBasica(num1, num2);
 //                        resultado = opBas.Soma(num1, num2);
                         System.out.println("Número "+num1+" + "+num2+" = "+resultado);
                         break;
