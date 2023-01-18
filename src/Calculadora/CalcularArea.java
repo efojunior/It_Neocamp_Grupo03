@@ -32,7 +32,5 @@ public class CalcularArea implements ICalcularArea {
         this.num2 = num2;
     }
 
-    public CalcularArea() {
-
-    }
+    public CalcularArea() {}
 }
