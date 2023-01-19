@@ -9,13 +9,12 @@ public class TesteCalculadora {
         Scanner ler = new Scanner(System.in);
         System.out.println("Bem vindo a nossa calculadora!!\n");
         do{
-
             if(opcao.size() == 0){
-                System.out.println("Digite um número de 1, 2 ou 3, sendo:\n1 - Operações básicas\n2 - Sair\n");//to do escrever
+                System.out.println("Digite um número de 1, 2, 3, 4, 5 ou 6, sendo:\n1 - Operações básicas\n2 - Outras operações\n3 - Conversor Moeda\n4 - Areas\n5 - Datas\n6 - Sair");
                 opcao.add(0, ler.nextInt());
             }
             else{
-                System.out.println("Digite um número de 1, 2, ou 3, sendo:\n1 - Operações básicas\n2 - Áreas \n");//to do escrever
+                System.out.println("Digite um número de 1, 2, ou 3, sendo:\n1 - Operações básicas\n2 - Outras operações\n3 - Conversor Moeda\n4 - Areas\n5 - Datas\n6 - Sair");//to do escrever
                 opcao.set(0, ler.nextInt());
             }
 
@@ -69,8 +68,10 @@ public class TesteCalculadora {
             System.out.println("Você deseja continuar?\n1 - Voltar para o menu inicial\n2 - Sair");
             opcao.set(0, ler.nextInt());
             }
+            else if(opcao.get(0) == 2){
 
-            else if (opcao.get(0) > 2)System.out.println("Digite outro numero!");
+            }
+            else if (opcao.get(0) > 5)System.out.println("Digite outro numero!");
         }while(opcao.get(0) != 2);
         System.out.println("\n**   Muito Obrigado por usar nosso programa!   **\n\n**   Até breve!   **");
     }
